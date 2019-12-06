@@ -12,8 +12,8 @@
 
 3.  在左侧导航栏中选择“API凭证“，即可获取对应的项目ID信息。
 
-    **图 2**  API凭证<a name="zh-cn_topic_0171449878_zh-cn_topic_0161541108_fig177761853216"></a>  
-    ![](figures/API凭证.png "API凭证")
+    **图 2**  获取项目ID<a name="zh-cn_topic_0171449878_zh-cn_topic_0161541108_fig177761853216"></a>  
+    ![](figures/获取项目ID.png "获取项目ID")
 
 
 ## 调用API获取项目ID<a name="zh-cn_topic_0171449878_section5912143972911"></a>

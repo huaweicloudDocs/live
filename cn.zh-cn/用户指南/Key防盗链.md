@@ -1,4 +1,4 @@
-# Key防盗链<a name="ZH-CN_TOPIC_0194695755"></a>
+# Key防盗链<a name="live01000302"></a>
 
 为保障直播资源不被非法盗用，您可以使用直播的Key防盗链功能，在原始推流或播放地址末尾加上鉴权信息。在主播请求直播推流或观众请求播放时，CDN会对其URL带的加密信息进行合法性判断，仅校验通过的请求会予以响应，其它非法的访问将予以拒绝。
 
@@ -115,7 +115,8 @@
 </tr>
 <tr id="row343529172915"><td class="cellrowborder" valign="top" width="25.1%" headers="mcps1.2.3.1.1 "><p id="p342723310248"><a name="p342723310248"></a><a name="p342723310248"></a>LiveID</p>
 </td>
-<td class="cellrowborder" valign="top" width="74.9%" headers="mcps1.2.3.1.2 "><p id="p10427173320240"><a name="p10427173320240"></a><a name="p10427173320240"></a>直播流ID，用于标识唯一的直播流。</p>
+<td class="cellrowborder" valign="top" width="74.9%" headers="mcps1.2.3.1.2 "><p id="p10427173320240"><a name="p10427173320240"></a><a name="p10427173320240"></a>直播流ID，用于标识唯一的直播流，由AppName和StreamName组成</p>
+<p id="p314954318210"><a name="p314954318210"></a><a name="p314954318210"></a>LiveID=&lt;AppName&gt;+"/"+&lt;StreamName&gt;</p>
 </td>
 </tr>
 <tr id="row20427103317248"><td class="cellrowborder" valign="top" width="25.1%" headers="mcps1.2.3.1.1 "><p id="p132630132713"><a name="p132630132713"></a><a name="p132630132713"></a>Timestamp</p>

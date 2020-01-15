@@ -1,4 +1,4 @@
-# Referer防盗链<a name="ZH-CN_TOPIC_0194695754"></a>
+# Referer防盗链<a name="live01000301"></a>
 
 Referer防盗链功能是基于HTTP协议支持的Referer机制，通过播放请求中携带的Referer字段来识别请求来源。配置Referer黑名单或白名单后，CDN会根据名单来对请求来源进行过滤，允许或拒绝播放请求。
 
@@ -7,7 +7,7 @@ Referer防盗链功能是基于HTTP协议支持的Referer机制，通过播放�
 -   该功能为可选项，默认不启用。
 -   Referer黑名单与Referer白名单互斥，不支持同时设置。
 -   黑名单或白名单中的域名最多支持配置100条。
--   黑名单或白名单中配置的域名前不能带协议名，域名为前缀匹配。如填写“www.example01.com“，则“www.example01.com/123“和“www.example01.com.cn“也会匹配成功。
+-   黑名单或白名单中配置的域名前不能带协议名，域名为前缀匹配。如填写“example.example01.com“，则“example.example01.com/123“和“example.example01.com.cn“也会匹配成功。
 
 ## 操作步骤<a name="section12744193714437"></a>
 
@@ -42,10 +42,10 @@ Referer防盗链功能是基于HTTP协议支持的Referer机制，通过播放�
     <tr id="zh-cn_topic_0129356805_zh-cn_topic_0111450891_row4725335657"><td class="cellrowborder" valign="top" width="10.67%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p1872653520517"><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p1872653520517"></a><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p1872653520517"></a>规则</p>
     </td>
     <td class="cellrowborder" valign="top" width="89.33%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p15426936145216"><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p15426936145216"></a><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p15426936145216"></a>黑名单或白名单中的域名。</p>
-    <a name="zh-cn_topic_0129356805_ul1316151174219"></a><a name="zh-cn_topic_0129356805_ul1316151174219"></a><ul id="zh-cn_topic_0129356805_ul1316151174219"><li>规则最多支持100条（最少1条），每一行一条记录，或者以英文<span class="parmvalue" id="zh-cn_topic_0129356805_parmvalue1116131117425"><a name="zh-cn_topic_0129356805_parmvalue1116131117425"></a><a name="zh-cn_topic_0129356805_parmvalue1116131117425"></a>“;”</span>分隔。</li><li>域名前不能带协议名（http://和https://）。</li><li>域名为前缀匹配，若填写<span class="parmvalue" id="zh-cn_topic_0129356805_parmvalue11740144414422"><a name="zh-cn_topic_0129356805_parmvalue11740144414422"></a><a name="zh-cn_topic_0129356805_parmvalue11740144414422"></a>“www.example01.com”</span>，则<span class="parmvalue" id="zh-cn_topic_0129356805_parmvalue767665064214"><a name="zh-cn_topic_0129356805_parmvalue767665064214"></a><a name="zh-cn_topic_0129356805_parmvalue767665064214"></a>“www.example01.com/123”</span>和<span class="parmvalue" id="zh-cn_topic_0129356805_parmvalue1636515444214"><a name="zh-cn_topic_0129356805_parmvalue1636515444214"></a><a name="zh-cn_topic_0129356805_parmvalue1636515444214"></a>“www.example01.com.cn”</span>也会匹配成功。</li></ul>
+    <a name="zh-cn_topic_0129356805_ul1316151174219"></a><a name="zh-cn_topic_0129356805_ul1316151174219"></a><ul id="zh-cn_topic_0129356805_ul1316151174219"><li>规则最多支持100条（最少1条），每一行一条记录，或者以英文<span class="parmvalue" id="zh-cn_topic_0129356805_parmvalue1116131117425"><a name="zh-cn_topic_0129356805_parmvalue1116131117425"></a><a name="zh-cn_topic_0129356805_parmvalue1116131117425"></a>“;”</span>分隔。</li><li>域名前不能带协议名（http://和https://）。</li><li>域名为前缀匹配，若填写<span class="parmvalue" id="parmvalue1293467145119"><a name="parmvalue1293467145119"></a><a name="parmvalue1293467145119"></a>“example.example01.com”</span>，则<span class="parmvalue" id="parmvalue1793487125112"><a name="parmvalue1793487125112"></a><a name="parmvalue1793487125112"></a>“example.example01.com/123”</span>和<span class="parmvalue" id="parmvalue14934571519"><a name="parmvalue14934571519"></a><a name="parmvalue14934571519"></a>“example.example01.com.cn”</span>也会匹配成功。</li></ul>
     <p id="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p588117345615"><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p588117345615"></a><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p588117345615"></a>示例如下：</p>
-    <pre class="screen" id="screen38364143112"><a name="screen38364143112"></a><a name="screen38364143112"></a>www.example01.com
-    www.example02.com</pre>
+    <pre class="screen" id="screen38364143112"><a name="screen38364143112"></a><a name="screen38364143112"></a>example.example01.com
+    example.example02.com</pre>
     </td>
     </tr>
     </tbody>

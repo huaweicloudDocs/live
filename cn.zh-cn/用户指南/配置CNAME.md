@@ -4,17 +4,13 @@
 
 ## 注意事项<a name="zh-cn_topic_0117188957_section421012115244"></a>
 
--   若您需要使用华为云的云解析服务对您注册的域名进行解析，您需要先将域名添加至云解析服务中。
-    -   通过华为云的[域名注册服务](https://support.huaweicloud.com/domain/index.html)注册的域名无需添加，您可以直接在云解析服务的“域名列表”中查看注册的域名。
-    -   通过第三方域名注册商注册的域名，需要通过“[创建公网域名](https://support.huaweicloud.com/usermanual-dns/zh-cn_topic_0035467702.html)”的操作将域名添加至云解析服务。
-
--   若您添加的域名是在华为云域名注册服务申请的，请参考[操作步骤](#section6663324202916)配置CNAME解析。
--   若您添加的域名不是在华为云域名注册服务申请的，您可以先将域名转入华为云管理，具体操作请参见[域名迁移](https://support.huaweicloud.com/dns_faq/dns_faq_001.html)，转入后再执行[操作步骤](#section6663324202916)配置CNAME解析。您也可以参考[配置CNAME解析（非华为云）](配置CNAME（非华为云）.md)，在对应域名服务提供商处进行配置，如指导与实际配置不符，请以各自域名服务提供商的指导信息为准。
+-   若您添加的域名是在华为云[域名注册服务](https://support.huaweicloud.com/domain/index.html)申请的，请参考[操作步骤](#section6663324202916)配置CNAME解析。
+-   若您添加的域名是通过第三方域名注册商注册的，您可以先通过[创建公网域名](https://support.huaweicloud.com/usermanual-dns/zh-cn_topic_0035467702.html#section3)操作将域名添加至云解析服务。然后再执行[操作步骤](#section6663324202916)配置CNAME解析。您也可以参考[配置CNAME解析（非华为云）](配置CNAME（非华为云）.md)，在对应域名服务提供商处进行配置，如指导与实际配置不符，请以各自域名服务提供商的指导信息为准。
 -   您需要分别对推流域名和播放域名进行CNAME配置。
 
 ## 操作步骤<a name="section6663324202916"></a>
 
-下面以播放域名为例，推流域名的CNAME配置步骤相同，对推流域名及对应的CNAME进行绑定。
+下面以播放域名为例，推流域名的CNAME配置步骤相同。
 
 1.  <a name="li184701358115720"></a>获取域名对应的CNAME值。
     1.  登录[视频直播控制台](视频直播控制台https://console.huaweicloud.com/live)，在左侧导航树中选择“域名管理 ”，进入域名管理页面。
@@ -68,7 +64,7 @@
     <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0117188957_p191215507322"><a name="zh-cn_topic_0117188957_p191215507322"></a><a name="zh-cn_topic_0117188957_p191215507322"></a>选择“CNAME-将域名指向另外一个域名”。</p>
     </td>
     </tr>
-    <tr id="row170145193715"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p41125123715"><a name="p41125123715"></a><a name="p41125123715"></a>别名</p>
+    <tr id="row170145193715"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p41125123715"><a name="p41125123715"></a><a name="p41125123715"></a>别名<a href="https://support.huaweicloud.com/usermanual-dns/dns_usermanual_0010.html" target="_blank" rel="noopener noreferrer">解析线路</a></p>
     </td>
     <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="p148333013716"><a name="p148333013716"></a><a name="p148333013716"></a>用于是否将此记录集关联至云服务资源实例。</p>
     <a name="ul14834306376"></a><a name="ul14834306376"></a><ul id="ul14834306376"><li>是：为此记录集关联云服务资源实例，详细说明请参见<a href="https://support.huaweicloud.com/usermanual-dns/dns_usermanual_0017.html" target="_blank" rel="noopener noreferrer">设置记录集别名</a>。</li><li>否：不为此记录集关联云服务资源实例。</li></ul>
@@ -78,7 +74,7 @@
     </tr>
     <tr id="zh-cn_topic_0117188957_row17912950153210"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0117188957_p129121850183215"><a name="zh-cn_topic_0117188957_p129121850183215"></a><a name="zh-cn_topic_0117188957_p129121850183215"></a>线路类型</p>
     </td>
-    <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p691245011321"><a name="zh-cn_topic_0117188957_p691245011321"></a><a name="zh-cn_topic_0117188957_p691245011321"></a>用于DNS服务器在解析域名时，根据访问者的来源，返回对应的服务器IP地址，详细了解可参见<a href="https://support.huaweicloud.com/productdesc-dns/zh-cn_topic_0089177011.html" target="_blank" rel="noopener noreferrer">解析线路</a>。</p>
+    <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p691245011321"><a name="zh-cn_topic_0117188957_p691245011321"></a><a name="zh-cn_topic_0117188957_p691245011321"></a>用于DNS服务器在解析域名时，根据访问者的来源，返回对应的服务器IP地址，具体请参见<a href="https://support.huaweicloud.com/usermanual-dns/dns_usermanual_0041.html" target="_blank" rel="noopener noreferrer">解析线路</a>。</p>
     <p id="p203987321322"><a name="p203987321322"></a><a name="p203987321322"></a>默认值为“全网默认”。</p>
     <p id="p1639815326325"><a name="p1639815326325"></a><a name="p1639815326325"></a>仅支持为公网域名的记录集配置此参数。</p>
     </td>
@@ -129,13 +125,14 @@
     </table>
 
 6.  <a name="li0498111464411"></a>单击“确定“，完成添加。
+
+    您可以在域名对应的记录集列表中查看添加的记录集。当记录集的状态显示为“正常”时，表示记录集添加成功。
+
 7.  执行[步骤1](#li184701358115720)-[步骤6](#li0498111464411)，完成对推流域名的CNAME配置。
 
 ## 验证CNAME是否生效<a name="section131811259171017"></a>
 
-配置CNAME后，不同的DNS服务商CNAME生效的时间也不同，您可以通过以下方式验证CNAME是否生效。
-
-打开Windows操作系统中的cmd程序，输入如下指令：
+您可以通过“nslookup“命令来查询CNAME是否生效。打开Windows操作系统中的cmd程序，输入如下命令：
 
 ```
 nslookup -qt=cname 加速域名

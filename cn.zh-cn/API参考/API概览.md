@@ -52,9 +52,19 @@
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p19876114904918"><a name="p19876114904918"></a><a name="p19876114904918"></a><a href="查询禁推黑名单列表.md">查询禁推黑名单列表</a></p>
 </td>
 </tr>
+<tr id="row1536853762513"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p16369337182517"><a name="p16369337182517"></a><a name="p16369337182517"></a>PUT /v1/{project_id}/stream/blocks</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p83698370257"><a name="p83698370257"></a><a name="p83698370257"></a><a href="修改禁推属性.md">修改禁推属性</a></p>
+</td>
+</tr>
 <tr id="row1784452213584"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p9845722125818"><a name="p9845722125818"></a><a name="p9845722125818"></a>POST /v1/{project_id}/stream/blocks</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p18462226585"><a name="p18462226585"></a><a name="p18462226585"></a><a href="禁止直播推流.md">禁推（禁止直播推流）</a></p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p18462226585"><a name="p18462226585"></a><a name="p18462226585"></a><a href="禁止直播推流.md">禁止直播推流</a></p>
+</td>
+</tr>
+<tr id="row130313472251"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p23041047172515"><a name="p23041047172515"></a><a name="p23041047172515"></a>DELETE /v1/{project_id}/stream/blocks</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p63041247182512"><a name="p63041247182512"></a><a name="p63041247182512"></a><a href="恢复直播推流.md">恢复直播推流</a></p>
 </td>
 </tr>
 <tr id="row0850202285812"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1485132235810"><a name="p1485132235810"></a><a name="p1485132235810"></a>GET /v1/{project_id}/stream/publish_list</p>

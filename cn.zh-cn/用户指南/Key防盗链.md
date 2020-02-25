@@ -23,7 +23,7 @@
 
 ## 开启Key防盗链<a name="section11844175984418"></a>
 
-1.  登录[视频直播控制台](视频直播控制台https://console.huaweicloud.com/live)。
+1.  登录[视频直播控制台](https://console.huaweicloud.com/live)。
 2.  在左侧导航树中选择“域名管理“，进入域名管理页面。
 3.  在需要配置鉴权信息的域名行右侧单击“管理“。
 4.  <a name="li17393202514236"></a>选择“鉴权配置 \> Key防盗链“。在弹出的页面中打“开关”，并配置Key防盗链参数。
@@ -89,7 +89,7 @@
 鉴权字段的生成算法如下所示：
 
 -   **LiveID**=<AppName\>+"/"+<StreamName\>
--   **加密串**=UrlEncode\(Base64\(AES128\("$"+<Timestamp\>+"$"+<LiveID\>+"$"+<CheckLevel\>\)\)\)
+-   **加密串**=UrlEncode\(Base64\(AES128\(<Key\>,"$"+<Timestamp\>+"$"+<LiveID\>+"$"+<CheckLevel\>\)\)\)
 -   **EncodedIV**=Hex\(加密使用的IV\)
 
 算法中各加密参数说明如[表2](#table542713310247)所示。
@@ -111,6 +111,11 @@
 <tr id="row18828643142815"><td class="cellrowborder" valign="top" width="25.1%" headers="mcps1.2.3.1.1 "><p id="p1582915435282"><a name="p1582915435282"></a><a name="p1582915435282"></a>StreamName</p>
 </td>
 <td class="cellrowborder" valign="top" width="74.9%" headers="mcps1.2.3.1.2 "><p id="p982918435288"><a name="p982918435288"></a><a name="p982918435288"></a>流名称，与推流或播放地址中的StreamName一致。</p>
+</td>
+</tr>
+<tr id="row1652817233815"><td class="cellrowborder" valign="top" width="25.1%" headers="mcps1.2.3.1.1 "><p id="p45297233818"><a name="p45297233818"></a><a name="p45297233818"></a><span id="ph132881141383"><a name="ph132881141383"></a><a name="ph132881141383"></a>Key</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="74.9%" headers="mcps1.2.3.1.2 "><p id="p14529132133816"><a name="p14529132133816"></a><a name="p14529132133816"></a><span id="ph2080414063914"><a name="ph2080414063914"></a><a name="ph2080414063914"></a>鉴权Key值，<a href="#section11844175984418">开启Key防盗链</a>中配置的Key值。</span></p>
 </td>
 </tr>
 <tr id="row343529172915"><td class="cellrowborder" valign="top" width="25.1%" headers="mcps1.2.3.1.1 "><p id="p342723310248"><a name="p342723310248"></a><a name="p342723310248"></a>LiveID</p>

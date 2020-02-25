@@ -4,7 +4,7 @@
 
 ## 配置方法<a name="section82280477454"></a>
 
-1.  登录[视频直播控制台](视频直播控制台https://console.huaweicloud.com/live)。
+1.  登录[视频直播控制台](https://console.huaweicloud.com/live)。
 2.  在左侧导航树中选择“域名管理“，进入域名管理页面。
 3.  在需要配置鉴权信息的域名行右侧单击“管理“。
 4.  选择“鉴权配置 \> IP黑名单“，弹出IP黑名单配置界面。

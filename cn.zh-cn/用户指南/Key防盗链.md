@@ -19,7 +19,7 @@
 -   该功能为可选项，默认不启用。
 -   启用该功能后，原始直播加速URL将无法使用，需要按规则生成合法的防盗链URL。
 -   若防盗链URL过期，或者签名不能通过，直播流将播放失败，并返回“403 Forbidden”信息。
--   若需要关闭Key防盗链，请[提交工单](https://console.huaweicloud.com/ticket)申请。
+-   若需要关闭Key防盗链，请[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请。
 
 ## 开启Key防盗链<a name="section11844175984418"></a>
 
@@ -35,9 +35,9 @@
     -   **时长**：URL鉴权信息的超时时长，指的是鉴权信息中携带的请求时间与直播服务收到请求时的时间的最大差值，用于检查直播推流URL或者直播播放URL是否已过期，单位：秒，范围限制：1分钟-30天。
 
 5.  配置完成后，单击“确定“。
-6.  [提交工单](https://console.huaweicloud.com/ticket)申请Key防盗链配置审核。
+6.  [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请Key防盗链配置审核。
 
-    若您修改了Key防盗链相关参数，也需要提交工单重新审核，提交工单时，需要提交的信息如[表1](#table204411582162)所示。
+    若您修改了Key防盗链相关参数，也需要[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)重新审核，提交工单时，需要提交的信息如[表1](#table204411582162)所示。
 
     **表 1**  Key防盗链配置审核
 
@@ -113,9 +113,9 @@
 <td class="cellrowborder" valign="top" width="74.9%" headers="mcps1.2.3.1.2 "><p id="p982918435288"><a name="p982918435288"></a><a name="p982918435288"></a>流名称，与推流或播放地址中的StreamName一致。</p>
 </td>
 </tr>
-<tr id="row1652817233815"><td class="cellrowborder" valign="top" width="25.1%" headers="mcps1.2.3.1.1 "><p id="p45297233818"><a name="p45297233818"></a><a name="p45297233818"></a><span id="ph132881141383"><a name="ph132881141383"></a><a name="ph132881141383"></a>Key</span></p>
+<tr id="row1652817233815"><td class="cellrowborder" valign="top" width="25.1%" headers="mcps1.2.3.1.1 "><p id="p45297233818"><a name="p45297233818"></a><a name="p45297233818"></a>Key</p>
 </td>
-<td class="cellrowborder" valign="top" width="74.9%" headers="mcps1.2.3.1.2 "><p id="p14529132133816"><a name="p14529132133816"></a><a name="p14529132133816"></a><span id="ph2080414063914"><a name="ph2080414063914"></a><a name="ph2080414063914"></a>鉴权Key值，<a href="#section11844175984418">开启Key防盗链</a>中配置的Key值。</span></p>
+<td class="cellrowborder" valign="top" width="74.9%" headers="mcps1.2.3.1.2 "><p id="p14529132133816"><a name="p14529132133816"></a><a name="p14529132133816"></a>鉴权Key值，<a href="#section11844175984418">开启Key防盗链</a>中配置的Key值。</p>
 </td>
 </tr>
 <tr id="row343529172915"><td class="cellrowborder" valign="top" width="25.1%" headers="mcps1.2.3.1.1 "><p id="p342723310248"><a name="p342723310248"></a><a name="p342723310248"></a>LiveID</p>
@@ -146,10 +146,10 @@
 鉴权URL示例
 
 ```
-rtmp://live.huaweitest1.com/live/8712345?auth_info=z6uwSWUceM2%2FZeDpc2LqjhEFhhXpjQ5IQJhrLoIARQ2%2Bn%2BJV4DrzGRqXxWxMLQBU.44393135353831414132454633374139
+rtmp://live.huaweitest1.com/live/8712345?auth_info=LpB4kdZfnOwfbpIgYVo4ABAU6CRUmV00OEARLlC7NLs%3D.79436d453636364e335941713330534e
 ```
 
-其中，**z6uwSWUceM2%2FZeDpc2LqjhEFhhXpjQ5IQJhrLoIARQ2%2Bn%2BJV4DrzGRqXxWxMLQBU**为加密串，**44393135353831414132454633374139**为EncodIV。
+其中，**LpB4kdZfnOwfbpIgYVo4ABAU6CRUmV00OEARLlC7NLs%3D**为加密串，**79436d453636364e335941713330534e**为EncodIV。
 
 ## 代码示例<a name="section632515010576"></a>
 

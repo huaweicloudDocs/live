@@ -13,7 +13,7 @@
 下面以播放域名为例，推流域名的CNAME配置步骤相同。
 
 1.  <a name="li184701358115720"></a>获取域名对应的CNAME值。
-    1.  登录[视频直播控制台](视频直播控制台https://console.huaweicloud.com/live)，在左侧导航树中选择“域名管理 ”，进入域名管理页面。
+    1.  登录[视频直播控制台](https://console.huaweicloud.com/live)，在左侧导航树中选择“域名管理 ”，进入域名管理页面。
     2.  在已添加的播放域名行单击“管理”，进入基本信息页面。
 
         在基本信息页面获取播放域名的CNAME。
@@ -21,7 +21,7 @@
         **图 1**  播放地址<a name="fig199493611582"></a>  
         ![](figures/播放地址.png "播放地址")
 
-        以“test-play.example.com“为例，获得对应的CNAME为“test-play.example.com.w.hwcloudlive.com“。
+        以“play-test.example.com“为例，获得对应的CNAME为“play-test.example.com.c.cdnhwc3.com“。
 
 2.  登录[云解析服务](https://console.huaweicloud.com/dns)控制台。
 3.  在左侧导航中，选择“域名解析 \> 公网解析“，进入域名列表页面。
@@ -54,7 +54,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="p10821175620454"><a name="p10821175620454"></a><a name="p10821175620454"></a>输入域名的二级域名（后缀无需用户手动填写）。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p14551715184910"><a name="p14551715184910"></a><a name="p14551715184910"></a>以播放域名“test-play.example.com”为例，此处输入“test-play”。</p>
+    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p14551715184910"><a name="p14551715184910"></a><a name="p14551715184910"></a>以播放域名“play-test.example.com”为例，此处输入“play-test”。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0117188957_row17912125016326"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0117188957_p791245012328"><a name="zh-cn_topic_0117188957_p791245012328"></a><a name="zh-cn_topic_0117188957_p791245012328"></a>类型</p>
@@ -93,7 +93,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="47.949999999999996%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0117188957_p1491219505324"><a name="zh-cn_topic_0117188957_p1491219505324"></a><a name="zh-cn_topic_0117188957_p1491219505324"></a>需指向的域名，即<a href="#li184701358115720">步骤1</a>获取的CNAME。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p62541540104520"><a name="p62541540104520"></a><a name="p62541540104520"></a>以播放域名“test-play.example.com”为例，此处输入<span class="parmvalue" id="parmvalue196656194612"><a name="parmvalue196656194612"></a><a name="parmvalue196656194612"></a>“test-play.example.com.w.hwcloudlive.com”</span>。</p>
+    <td class="cellrowborder" valign="top" width="34.050000000000004%" headers="mcps1.2.4.1.3 "><p id="p62541540104520"><a name="p62541540104520"></a><a name="p62541540104520"></a>以播放域名“play-test.example.com”为例，此处输入<span class="parmvalue" id="parmvalue196656194612"><a name="parmvalue196656194612"></a><a name="parmvalue196656194612"></a>“play-test.example.com.c.cdnhwc3.com”</span>。</p>
     </td>
     </tr>
     <tr id="row19122133853010"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.1 "><p id="p64191365312"><a name="p64191365312"></a><a name="p64191365312"></a>权重</p>

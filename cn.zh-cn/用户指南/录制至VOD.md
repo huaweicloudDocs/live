@@ -28,7 +28,7 @@
 ## 费用说明<a name="section91671545205015"></a>
 
 -   直播的消息通知将用到消息通知服务，实际使用的消息通知费用由消息通知服务单独收取，具体价格详情请参见[SMN价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/smn)。
--   直播录制生成的视频文件是存储在点播服务中，因此，产生的相关费用是按点播的价格进行计费收取的，具体价格详情请参见[视频点播-产品价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/vod)。
+-   直播录制生成的视频文件是存储在点播服务中，因此，产生的相关费用是按点播的价格进行计费收取的，具体价格详情请参见[VOD价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/vod)。
     -   录制文件存储费用
 
         按录制文件的实际大小收费，若配置了录制转码，原始录制文件和转码录制文件都将产生存储费用。
@@ -99,7 +99,7 @@
     4.  单击操作列的![](figures/播放.png)图标，可以对录制文件进行预览。
 
         >![](public_sys-resources/icon-notice.gif) **须知：**   
-        >录制文件是存储在视频点播服务中的，因此，预览录制文件将会产生点播下行流量费用，具体价格详情请参见[视频点播-价格说明](https://support.huaweicloud.com/price-vod/vod070001.html)。  
+        >录制文件是存储在视频点播服务中的，因此，预览录制文件将会产生点播下行流量费用，具体价格详情请参见[VOD价格详情](https://www.huaweicloud.com/pricing.html?tab=detail#/vod)。  
 
     5.  若您需要查看录制文件的详细信息，可单击对应录制文件行的![](figures/查看-0.png)。
 
@@ -115,7 +115,7 @@
         **图 5**  在点播控制台查看录制文件<a name="fig12474142516216"></a>  
         ![](figures/在点播控制台查看录制文件.png "在点播控制台查看录制文件")
 
-    2.  单击对应录制文件行的“管理“，您可在详情页面对已录制的视频文件进行转码、分类、添加封面、上传字幕等操作，若您有配置录制通知，具体操作指导请参见《[视频点播用户指南](https://support.huaweicloud.com/usermanual-vod/vod010010.html)》。
+    2.  单击对应录制文件行的“管理“，您可在详情页面对已录制的视频文件进行转码、分类、添加封面、上传字幕等操作，若您有配置录制通知，具体操作指导请参见[视频点播用户指南](https://support.huaweicloud.com/usermanual-vod/vod010010.html)》。
 
 -   调用点播API获取录制文件列表
 

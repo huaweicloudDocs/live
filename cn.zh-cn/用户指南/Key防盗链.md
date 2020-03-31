@@ -120,7 +120,7 @@
 </tr>
 <tr id="row343529172915"><td class="cellrowborder" valign="top" width="25.1%" headers="mcps1.2.3.1.1 "><p id="p342723310248"><a name="p342723310248"></a><a name="p342723310248"></a>LiveID</p>
 </td>
-<td class="cellrowborder" valign="top" width="74.9%" headers="mcps1.2.3.1.2 "><p id="p10427173320240"><a name="p10427173320240"></a><a name="p10427173320240"></a>直播流ID，用于标识唯一的直播流，由AppName和StreamName组成</p>
+<td class="cellrowborder" valign="top" width="74.9%" headers="mcps1.2.3.1.2 "><p id="p10427173320240"><a name="p10427173320240"></a><a name="p10427173320240"></a>直播流ID，用于标识唯一的直播流，由AppName和StreamName组成。</p>
 <p id="p314954318210"><a name="p314954318210"></a><a name="p314954318210"></a>LiveID=&lt;AppName&gt;+"/"+&lt;StreamName&gt;</p>
 </td>
 </tr>

@@ -69,7 +69,7 @@
     <tr id="zh-cn_topic_0176508927_row124041522164413"><td class="cellrowborder" valign="top" width="35.8%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0176508927_p144055227441"><a name="zh-cn_topic_0176508927_p144055227441"></a><a name="zh-cn_topic_0176508927_p144055227441"></a>时长</p>
     </td>
     <td class="cellrowborder" valign="top" width="64.2%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0176508927_p194051922104410"><a name="zh-cn_topic_0176508927_p194051922104410"></a><a name="zh-cn_topic_0176508927_p194051922104410"></a>请填写为<a href="#li17393202514236">4</a>中设置的时长。</p>
-    <p id="zh-cn_topic_0176508927_p9162145714545"><a name="zh-cn_topic_0176508927_p9162145714545"></a><a name="zh-cn_topic_0176508927_p9162145714545"></a>示例：0</p>
+    <p id="zh-cn_topic_0176508927_p9162145714545"><a name="zh-cn_topic_0176508927_p9162145714545"></a><a name="zh-cn_topic_0176508927_p9162145714545"></a>示例：120</p>
     </td>
     </tr>
     </tbody>

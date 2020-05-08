@@ -67,16 +67,6 @@
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p63041247182512"><a name="p63041247182512"></a><a name="p63041247182512"></a><a href="恢复直播推流.md">恢复直播推流</a></p>
 </td>
 </tr>
-<tr id="row0850202285812"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1485132235810"><a name="p1485132235810"></a><a name="p1485132235810"></a>GET /v1/{project_id}/stream/publish_list</p>
-</td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p26771514111917"><a name="p26771514111917"></a><a name="p26771514111917"></a><a href="查询直播推流列表（旧版）.md">查询直播推流列表（旧版）</a></p>
-</td>
-</tr>
-<tr id="row54941555185111"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p16264526528"><a name="p16264526528"></a><a name="p16264526528"></a>GET /v1/{project_id}/origin/stream/statistic</p>
-</td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p249565511513"><a name="p249565511513"></a><a name="p249565511513"></a><a href="查询直播推流列表（新版）.md">查询直播推流列表（新版）</a></p>
-</td>
-</tr>
 <tr id="row985342219586"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1485452214582"><a name="p1485452214582"></a><a name="p1485452214582"></a>GET /v1/{project_id}/stream/bandwidth</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p158553227588"><a name="p158553227588"></a><a name="p158553227588"></a><a href="查询直播加速的带宽数据.md">查询直播加速的带宽数据</a></p>

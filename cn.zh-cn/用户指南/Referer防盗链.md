@@ -22,7 +22,7 @@ Referer防盗链功能是基于HTTP协议支持的Referer机制，通过播放�
 
     防盗链配置及对应访问权限说明如[表1](#zh-cn_topic_0129356805_table837817528191)所示。
 
-    **表 1**  参数说明
+    **表 1**  Referer防盗链配置
 
     <a name="zh-cn_topic_0129356805_table837817528191"></a>
     <table><thead align="left"><tr id="zh-cn_topic_0129356805_zh-cn_topic_0111450891_row19890101885714"><th class="cellrowborder" valign="top" width="20.03%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p182343561940"><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p182343561940"></a><a name="zh-cn_topic_0129356805_zh-cn_topic_0111450891_p182343561940"></a>参数名</p>
@@ -51,7 +51,8 @@ Referer防盗链功能是基于HTTP协议支持的Referer机制，通过播放�
     </table>
 
 6.  配置完成后，单击“确定“。
+7.  [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请Referer防盗链审核，提交的信息需要包含配置的域名及[表1](#zh-cn_topic_0129356805_table837817528191)中的信息。
 
-    配置完成后，需要3\~5分钟才能生效。
+    审核通过后Referer防盗链功能才会生效。若修改了Referer盗链的配置，也需重新[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)审核。
 
 

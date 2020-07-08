@@ -1,6 +1,6 @@
 # API概览<a name="topic_live_04_overview_100015"></a>
 
-视频直播服务对应的接口列表如下所示，在调用视频直播API前，您需要先获取用户Token，Token可以用于调用其他API时鉴权，具体如何调用直播API请参考[快速入门](创建转码模板.md)。
+视频直播服务对应的接口列表如下所示，在调用视频直播API前，您需要先获取用户Token，Token可以用于调用其他API时鉴权，具体如何调用直播API请参考[快速入门](https://support.huaweicloud.com/api-live/live_03_0026.html)。
 
 ## 转码模板管理接口<a name="zh-cn_topic_0140252983_section1490691275720"></a>
 

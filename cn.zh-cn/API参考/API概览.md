@@ -150,6 +150,11 @@
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p094631537"><a name="p094631537"></a><a name="p094631537"></a><a href="查询观众趋势接口.md">查询观众趋势</a></p>
 </td>
 </tr>
+<tr id="row598141117340"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p133858396226"><a name="p133858396226"></a><a name="p133858396226"></a>GET /v2/{project_id}/stats/httpcodes</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p58671473232"><a name="p58671473232"></a><a name="p58671473232"></a><a href="查询直播拉流HTTP状态码接口.md">查询直播拉流HTTP状态码接口</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -172,25 +177,6 @@
 <tr id="zh-cn_topic_0140252983_row1087228461"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p15600520545"><a name="p15600520545"></a><a name="p15600520545"></a>GET /v2/{project_id}/stats/stream/bitrate</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p10638165125319"><a name="p10638165125319"></a><a name="p10638165125319"></a><a href="查询推流码率数据接口.md">查询推流码率数据</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
-## HTTP状态码接口<a name="section9376199112215"></a>
-
-**表 6**  HTTP状态码接口
-
-<a name="table20384153915227"></a>
-<table><thead align="left"><tr id="row6384103919228"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="p2385203982210"><a name="p2385203982210"></a><a name="p2385203982210"></a>接口</p>
-</th>
-<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.2"><p id="p7385139172216"><a name="p7385139172216"></a><a name="p7385139172216"></a>说明</p>
-</th>
-</tr>
-</thead>
-<tbody><tr id="row1638523992210"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p133858396226"><a name="p133858396226"></a><a name="p133858396226"></a>GET /v2/{project_id}/stats/httpcodes</p>
-</td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p58671473232"><a name="p58671473232"></a><a name="p58671473232"></a><a href="查询直播拉流HTTP状态码接口.md">查询直播拉流HTTP状态码接口</a></p>
 </td>
 </tr>
 </tbody>

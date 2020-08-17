@@ -21,12 +21,19 @@
 -   若防盗链URL过期，或者签名不能通过，直播流将播放失败，并返回“403 Forbidden”信息。
 -   若需要关闭Key防盗链，请[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请。
 
+## 前提条件<a name="section38573451572"></a>
+
+-   已[添加推流域名和播放域名](添加域名.md)，且已完成[域名关联](关联域名.md)。
+-   已在域名DNS服务商处完成[CNAME解析配置](配置CNAME.md)。
+
 ## 开启Key防盗链<a name="section11844175984418"></a>
 
 1.  登录[视频直播控制台](https://console.huaweicloud.com/live)。
 2.  在左侧导航树中选择“域名管理“，进入域名管理页面。
-3.  在需要配置鉴权信息的播放域名行右侧单击“管理“。
-4.  <a name="li17393202514236"></a>在左侧导航树中选择“基础配置 \> 鉴权配置 \> Key防盗链“。在弹出的页面中打开“开关”，并配置Key防盗链参数。
+3.  在需要配置鉴权信息的播放域名行单击“管理“。
+4.  <a name="li17393202514236"></a>在左侧导航树中选择“基础配置 \> 鉴权配置“。
+5.  选择“Key防盗链“，弹出“Key防盗链”对话框。
+6.  单击“开关”，如[图2](#fig72428511927)所示，配置Key防盗链参数。
 
     **图 2**  配置Key防盗链<a name="fig72428511927"></a>  
     ![](figures/配置Key防盗链-3.png "配置Key防盗链-3")
@@ -34,8 +41,8 @@
     -   **Key**：鉴权key值，支持自定义设置，由16位的字母和数字组成。
     -   **时长**：URL鉴权信息的超时时长，指的是鉴权信息中携带的请求时间与直播服务收到请求时的时间的最大差值，用于检查直播推流URL或者直播播放URL是否已过期，单位：秒，范围限制：1分钟-30天。
 
-5.  配置完成后，单击“确定“。
-6.  [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请Key防盗链配置审核。
+7.  配置完成后，单击“确定“。
+8.  [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请Key防盗链配置审核。
 
     若您修改了Key防盗链相关参数，也需要[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)重新审核，提交工单时，需要提交的信息如[表1](#table204411582162)所示。
 

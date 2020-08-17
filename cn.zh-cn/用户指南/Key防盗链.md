@@ -9,8 +9,8 @@
 
 流程说明如下所示：
 
-1.  租户在直播控制台开启Key防盗链功能，并配置计算鉴权串的方式、Key值和时长。
-2.  直播服务将租户配置Key值和时长下发到CDN节点中。
+1.  租户在直播控制台开启Key防盗链功能，并配置鉴权方式、Key值和时长。
+2.  直播服务将租户配置的鉴权方式、Key值和时长下发到CDN节点中。
 3.  主播/观众通过租户提供的鉴权推流/播放URL向CDN请求推流或播放。
 4.  CDN根据推流或播放URL中携带的鉴权信息校验请求的合法性，仅校验通过的请求会被允许。
 
@@ -20,12 +20,19 @@
 -   启用该功能后，原始直播加速URL将无法使用，需要按规则生成合法的防盗链URL。
 -   若防盗链URL过期，或者签名不能通过，直播流将播放失败，并返回“403 Forbidden”信息。
 
+## 前提条件<a name="section38573451572"></a>
+
+-   已[添加推流域名和播放域名](添加域名.md)，且已完成[域名关联](关联域名.md)。
+-   已在域名DNS服务商处完成[CNAME解析配置](配置CNAME.md)。
+
 ## 开启Key防盗链<a name="section176718241440"></a>
 
 1.  登录[视频直播控制台](https://console.huaweicloud.com/live)。
 2.  在左侧导航树中选择“域名管理“，进入域名管理页面。
-3.  在需要配置鉴权信息的域名行右侧单击“管理“。
-4.  在左侧导航树中选择“基础配置 \> 鉴权配置 \> Key防盗链“。在弹出的页面中打开“开关”，并配置Key防盗链参数。
+3.  在需要配置鉴权信息的域名行单击“管理“。
+4.  在左侧导航树中选择“基础配置 \> 鉴权配置“。
+5.  选择“Key防盗链“，弹出“Key防盗链”对话框。
+6.  单击“开关”，如[图2](#fig987364825218)所示，配置Key防盗链参数。
 
     **图 2**  配置Key防盗链<a name="fig987364825218"></a>  
     ![](figures/配置Key防盗链.png "配置Key防盗链")
@@ -34,12 +41,12 @@
     -   **Key**：鉴权key值，支持自定义设置，由16位的字母和数字组成。
     -   **时长**：URL鉴权信息的超时时长，指的是鉴权信息中携带的请求时间与直播服务收到请求时的时间的最大差值，用于检查直播推流URL或者直播播放URL是否已过期，单位：秒，范围限制：1分钟-30天。
 
-5.  配置完成后，单击“确定“。
-6.  根据选择的鉴权方式获取对应的鉴权地址。
+7.  配置完成后，单击“确定“。
+8.  根据选择的鉴权方式获取对应的鉴权地址。
 
     各鉴权方式的对应鉴权地址生成方法请分别参见[鉴权方式A](#section13701955203212)、[鉴权方式B](#section934895818335)和[鉴权方式C](#section175641738343)。
 
-7.  验证防盗链功能。
+9.  验证防盗链功能。
 
     使用视频云APP，通过鉴权推流地址和播放地址进行验证，若原始推流地址和播放地址无法成功推流和播放，使用鉴权推流地址和播放地址能成功推流和播放，则表示Key防盗链生效。
 
@@ -104,7 +111,7 @@ HashValue = md5sum(sstring)</pre>
 <tr id="row135955132303"><td class="cellrowborder" valign="top" width="30.709999999999997%" headers="mcps1.2.3.1.1 "><p id="p12431624183011"><a name="p12431624183011"></a><a name="p12431624183011"></a>URI</p>
 </td>
 <td class="cellrowborder" valign="top" width="69.28999999999999%" headers="mcps1.2.3.1.2 "><p id="p44311024173019"><a name="p44311024173019"></a><a name="p44311024173019"></a>指原始URL中从域名后开始到最后的路径。</p>
-<p id="p119565223547"><a name="p119565223547"></a><a name="p119565223547"></a>示例：/livetest/huawei1</p>
+<p id="p119565223547"><a name="p119565223547"></a><a name="p119565223547"></a>示例：/livetest/huawei1.flv</p>
 </td>
 </tr>
 <tr id="row183971133144612"><td class="cellrowborder" valign="top" width="30.709999999999997%" headers="mcps1.2.3.1.1 "><p id="p1839714334461"><a name="p1839714334461"></a><a name="p1839714334461"></a>Key</p>
@@ -120,24 +127,25 @@ HashValue = md5sum(sstring)</pre>
 以生成播放鉴权地址为例，推流鉴权地址的生成与播放鉴权地址的生成方法相同。
 
 ```
-原始URL：rtmp://test-play.example.com/livetest/huawei1
+原始URL：http://test-play.example.com/livetest/huawei1.flv
 timestamp：1592639100
 有效时间：1800s
-Key：myPrivateKey
+Key：MyLiveKeyValue01
 rand：477b3bbc253f467b8def6711128c7bec
 uid：0
+URI：/livetest/huawei1.flv
 ```
 
 根据计算公式，得到**md5hash**。
 
 ```
-HashValue = md5sum("/livetest/huawei1-1592639100-477b3bbc253f467b8def6711128c7bec-0-myPrivateKey") = e54b26f57a0e73b366de9bca79bcb628
+HashValue = md5sum("/livetest/huawei1.flv-1592639100-477b3bbc253f467b8def6711128c7bec-0-MyLiveKeyValue01") = 546a86457bf6886a459596c545ff5224
 ```
 
 则鉴权播放地址为：
 
 ```
-rtmp://test-play.example.com/livetest/huawei1?auth_key=1592639100-477b3bbc253f467b8def6711128c7bec-0-e54b26f57a0e73b366de9bca79bcb628
+http://test-play.example.com/livetest/huawei1.flv?auth_key=1592639100-477b3bbc253f467b8def6711128c7bec-0-546a86457bf6886a459596c545ff5224
 ```
 
 ## 鉴权方式B<a name="section934895818335"></a>
@@ -192,8 +200,8 @@ rtmp://test-play.example.com/livetest/huawei1?auth_key=1592639100-477b3bbc253f46
 以生成播放鉴权地址为例，推流鉴权地址的生成与播放鉴权地址的生成同理。
 
 ```
-原始URL：rtmp://test-play.example.com/livetest/huawei1
-Key：myPrivateKey
+原始URL：http://test-play.example.com/livetest/huawei1.flv
+Key：MyLiveKeyValue01
 StreamName：huawei1
 txTime：5eed5888
 有效时间：12495s
@@ -202,13 +210,13 @@ txTime：5eed5888
 根据计算公式，得到**txSecret**。
 
 ```
-txSecret = md5(myPrivateKeyhuawei15eed5888) = e1af59dafe93ac86b9e01645f0ffea75
+txSecret = md5(MyLiveKeyValue01huawei15eed5888) = c37c840d8e130861064047313991a4dd
 ```
 
 则鉴权播放地址为：
 
 ```
-rtmp://test-play.example.com/livetest/huawei1?txSecret=e1af59dafe93ac86b9e01645f0ffea75&txTime=5eed5888
+http://test-play.example.com/livetest/huawei1.flv?txSecret=c37c840d8e130861064047313991a4dd&txTime=5eed5888
 ```
 
 ## 鉴权方式C<a name="section175641738343"></a>
@@ -282,23 +290,28 @@ rtmp://test-play.example.com/livetest/huawei1?txSecret=e1af59dafe93ac86b9e01645f
 
 以生成播放鉴权地址为例，推流鉴权地址的生成与播放鉴权地址的生成同理。
 
-原始播放地址：
+```
+原始URL：http://test-play.example.com/livetest/huawei1.flv
+AppName：live
+StreamName：huawei1
+Key：MyLiveKeyValue01
+LiveID：live/huawei1
+Timestamp：20190428110000
+CheckLevel：3
+IV：yCmE666N3YAq30SN
+```
+
+根据计算公式，得到“加密串“和“EncodedIV“
 
 ```
-rtmp://test-play.example.com/livetest/huawei1
-```
-
-使用鉴权加密算法，得到“加密串“和“EncodedIV“。
-
-```
-加密串 = LpB4kdZfnOwfbpIgYVo4ABAU6CRUmV00OEARLlC7NLs%3D
+加密串 = LpB4kdZfnOwfbpIgYVo4ANwhZIkOO96o8Xfhc6qwOq0%3D
 EncodIV = 79436d453636364e335941713330534e
 ```
 
 则鉴权播放地址为：
 
 ```
-rtmp://test-play.example.com/livetest/huawei1?auth_info=LpB4kdZfnOwfbpIgYVo4ABAU6CRUmV00OEARLlC7NLs%3D.79436d453636364e335941713330534e
+http://test-play.example.com/livetest/huawei1.flv?auth_info=LpB4kdZfnOwfbpIgYVo4ANwhZIkOO96o8Xfhc6qwOq0%3D.79436d453636364e335941713330534e
 ```
 
 ## 代码示例<a name="section3911050145912"></a>
@@ -317,7 +330,7 @@ public class Main {
 
         public static void main(String[] args) {
 
-		// data="$"+<Timestamp>+"$"+<LiveID>+"$"+<CheckLevel>，具体请参见“鉴权URL生成”
+		// data="$"+<Timestamp>+"$"+<LiveID>+"$"+<CheckLevel>，具体请参见“鉴权方式C”
                 String data = "$20190428110000$live/stream01$3";
 
                 // 随机生成的16位数字和字母组合

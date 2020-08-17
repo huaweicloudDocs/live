@@ -9,13 +9,19 @@ Referer防盗链功能是基于HTTP协议支持的Referer机制，通过播放�
 -   黑名单或白名单中的域名最多支持配置100条。
 -   黑名单或白名单中配置的域名前不能带协议名，域名为前缀匹配。如填写“example.example01.com“，则“example.example01.com/123“和“example.example01.com.cn“也会匹配成功。
 
+## 前提条件<a name="section38573451572"></a>
+
+-   已[添加推流域名和播放域名](添加域名.md)，且已完成[域名关联](关联域名.md)。
+-   已在域名DNS服务商处完成[CNAME解析配置](配置CNAME.md)。
+
 ## 操作步骤<a name="section12744193714437"></a>
 
 1.  登录[视频直播控制台](https://console.huaweicloud.com/live)。
 2.  在左侧导航树中选择“域名管理“，进入域名管理页面。
-3.  在需要配置鉴权信息的播放域名行右侧单击“管理“。
-4.  在左侧导航树中选择“基础配置 \> 鉴权配置 \> Referer防盗链“，弹出“Referer防盗链“页面。
-5.  单击“开关“，如[图1](#fig657733201016)所示，配置Referer防盗链参数。
+3.  在需要配置鉴权信息的播放域名行单击“管理“。
+4.  在左侧导航树中选择“基础配置 \> 鉴权配置“。
+5.  选择“Referer防盗链“，弹出“Referer防盗链“对话框。
+6.  单击“开关“，如[图1](#fig657733201016)所示，配置Referer防盗链参数。
 
     **图 1**  配置Referer防盗链<a name="fig657733201016"></a>  
     ![](figures/配置Referer防盗链-1.png "配置Referer防盗链-1")
@@ -50,8 +56,8 @@ Referer防盗链功能是基于HTTP协议支持的Referer机制，通过播放�
     </tbody>
     </table>
 
-6.  配置完成后，单击“确定“。
-7.  [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请Referer防盗链审核，提交的信息需要包含配置的域名及[表1](#zh-cn_topic_0129356805_table837817528191)中的信息。
+7.  配置完成后，单击“确定“。
+8.  [提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)申请Referer防盗链审核，提交的信息需要包含配置的域名及[表1](#zh-cn_topic_0129356805_table837817528191)中的信息。
 
     审核通过后Referer防盗链功能才会生效。若修改了Referer盗链的配置，也需重新[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=ffb4ebf5fb094bc6aef0129c276ce42e)审核。
 

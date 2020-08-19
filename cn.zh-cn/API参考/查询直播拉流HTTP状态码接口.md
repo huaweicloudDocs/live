@@ -10,7 +10,7 @@
 
 ## 调试
 
-您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=Live&api=ListQueryHttpCode)中调试该接口。
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=Live&api=ListQueryHttpCode)中调试该接口，并获取该接口关联的CLI示例：  [hcloud Live ListQueryHttpCode](https://apiexplorer.developer.huaweicloud.com/apiexplorer/cli?product=Live&api=ListQueryHttpCode)。
 
 ## URI
 
@@ -388,7 +388,7 @@ GET /v2/{project_id}/stats/httpcode?play_domains=example.huawei.com,example1.hua
 
 ## 状态码
 
-<a name="table199"></a>
+<a name="table554"></a>
 <table><thead align="left"><tr><th class="cellrowborder" valign="top" width="15%" id="mcps1.1.3.1.1"><p>状态码 </p>
 </th>
 <th class="cellrowborder" valign="top" width="85%" id="mcps1.1.3.1.2"><p>描述</p>

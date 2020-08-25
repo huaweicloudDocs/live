@@ -1,6 +1,6 @@
 # API概览<a name="topic_live_04_overview_100015"></a>
 
-视频直播服务对应的接口列表如下所示，在调用视频直播API前，您需要先获取用户Token，Token可以用于调用其他API时鉴权，具体如何调用直播API请参考[快速入门](https://support.huaweicloud.com/api-live/live_03_0026.html)。
+视频直播服务对应的接口列表如下所示，在调用视频直播API前，您需要先获取用户Token，Token可以用于调用其他API时鉴权，具体如何调用直播API请参考[快速入门](示例1-创建转码模板.md)。
 
 ## 转码模板管理接口<a name="zh-cn_topic_0140252983_section1490691275720"></a>
 
@@ -85,30 +85,30 @@
 </tbody>
 </table>
 
-## 录制管理接口<a name="zh-cn_topic_0140252983_section6534185517572"></a>
+## 录制管理接口<a name="section6534185517572"></a>
 
 **表 3**  录制管理接口
 
-<a name="zh-cn_topic_0140252983_table1991126205713"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0140252983_row16280735710"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0140252983_p112816711577"><a name="zh-cn_topic_0140252983_p112816711577"></a><a name="zh-cn_topic_0140252983_p112816711577"></a>接口</p>
+<a name="table1991126205713"></a>
+<table><thead align="left"><tr id="row16280735710"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="p112816711577"><a name="p112816711577"></a><a name="p112816711577"></a>接口</p>
 </th>
-<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.2"><p id="zh-cn_topic_0140252983_p18280785716"><a name="zh-cn_topic_0140252983_p18280785716"></a><a name="zh-cn_topic_0140252983_p18280785716"></a>说明</p>
+<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.2"><p id="p18280785716"><a name="p18280785716"></a><a name="p18280785716"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0140252983_row20314717576"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0140252983_p1631177165712"><a name="zh-cn_topic_0140252983_p1631177165712"></a><a name="zh-cn_topic_0140252983_p1631177165712"></a>POST /v1/{project_id}/record/config</p>
+<tbody><tr id="row20314717576"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1631177165712"><a name="p1631177165712"></a><a name="p1631177165712"></a>POST /v1/{project_id}/record/config</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p992043352619"><a name="p992043352619"></a><a name="p992043352619"></a><a href="创建录制配置.md">创建录制配置</a></p>
-</td>
-</tr>
-<tr id="row18897229152918"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0140252983_p53317710573"><a name="zh-cn_topic_0140252983_p53317710573"></a><a name="zh-cn_topic_0140252983_p53317710573"></a>DELETE /v1/{project_id}/record/config</p>
-</td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0140252983_p13316716571"><a name="zh-cn_topic_0140252983_p13316716571"></a><a name="zh-cn_topic_0140252983_p13316716571"></a><a href="删除录制配置.md">删除录制配置</a></p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p173111785710"><a name="p173111785710"></a><a name="p173111785710"></a><a href="创建录制配置.md">创建录制配置</a></p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0140252983_row1331775573"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0140252983_p1933197115719"><a name="zh-cn_topic_0140252983_p1933197115719"></a><a name="zh-cn_topic_0140252983_p1933197115719"></a>GET /v1/{project_id}/record/config</p>
+<tr id="row1331775573"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1933197115719"><a name="p1933197115719"></a><a name="p1933197115719"></a>GET /v1/{project_id}/record/config</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0140252983_p1133873574"><a name="zh-cn_topic_0140252983_p1133873574"></a><a name="zh-cn_topic_0140252983_p1133873574"></a><a href="查询录制配置.md">查询录制配置</a></p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1133873574"><a name="p1133873574"></a><a name="p1133873574"></a><a href="查询录制配置.md">查询录制配置</a></p>
+</td>
+</tr>
+<tr id="row1633071574"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p53317710573"><a name="p53317710573"></a><a name="p53317710573"></a>DELETE /v1/{project_id}/record/config</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p13316716571"><a name="p13316716571"></a><a name="p13316716571"></a><a href="删除录制配置.md">删除录制配置</a></p>
 </td>
 </tr>
 </tbody>
@@ -153,6 +153,21 @@
 <tr id="row598141117340"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p133858396226"><a name="p133858396226"></a><a name="p133858396226"></a>GET /v2/{project_id}/stats/httpcodes</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p58671473232"><a name="p58671473232"></a><a name="p58671473232"></a><a href="查询直播拉流HTTP状态码接口.md">查询直播拉流HTTP状态码接口</a></p>
+</td>
+</tr>
+<tr id="row174991530436"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p139638597418"><a name="p139638597418"></a><a name="p139638597418"></a>GET /v2/{project_id}/stats/up-bandwidth/detail</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p2094953184410"><a name="p2094953184410"></a><a name="p2094953184410"></a><a href="查询上行带宽数据接口.md">查询上行带宽数据接口</a></p>
+</td>
+</tr>
+<tr id="row8361135004316"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p8361750154319"><a name="p8361750154319"></a><a name="p8361750154319"></a>GET /v2/{project_id}/stats/stream-count</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1336114506438"><a name="p1336114506438"></a><a name="p1336114506438"></a><a href="查询域名维度推流路数接口.md">查询域名维度推流路数接口</a></p>
+</td>
+</tr>
+<tr id="row79814964413"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p59864916446"><a name="p59864916446"></a><a name="p59864916446"></a>GET /v2/{project_id}/stats/history/streams</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p398149174419"><a name="p398149174419"></a><a name="p398149174419"></a><a href="查询历史推流列表接口.md">查询历史推流列表接口</a></p>
 </td>
 </tr>
 </tbody>

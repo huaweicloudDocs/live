@@ -8,9 +8,13 @@
 
 最大查询跨度不能超过24小时，最大查询周期7天。
 
+## 接口约束
+
+该接口暂只支持查询部署在新版视频直播服务上的域名的相关数据。[如何查询域名是新版还是旧版？](https://support.huaweicloud.com/usermanual-live/live_01_0055.html)
+
 ## 调试
 
-您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=Live&api=ListQueryHttpCode)中调试该接口，并获取该接口关联的CLI示例：  [hcloud Live ListQueryHttpCode](https://apiexplorer.developer.huaweicloud.com/apiexplorer/cli?product=Live&api=ListQueryHttpCode)。
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=Live&api=ListQueryHttpCode)中调试该接口。
 
 ## URI
 
@@ -382,13 +386,13 @@ GET /v2/{project_id}/stats/httpcode?play_domains=example.huawei.com,example1.hua
 ```
 {
   "error_code" : "LIVE.100011001",
-  "error_msg" : "请求参数非法：play_domains。"
+  "error_msg" : "Invalid request parameter: play_domains"
 }
 ```
 
 ## 状态码
 
-<a name="table554"></a>
+<a name="table8414"></a>
 <table><thead align="left"><tr><th class="cellrowborder" valign="top" width="15%" id="mcps1.1.3.1.1"><p>状态码 </p>
 </th>
 <th class="cellrowborder" valign="top" width="85%" id="mcps1.1.3.1.2"><p>描述</p>

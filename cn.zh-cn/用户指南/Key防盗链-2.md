@@ -51,7 +51,7 @@
     <a name="table204411582162"></a>
     <table><thead align="left"><tr id="zh-cn_topic_0176508927_row3705145215912"><th class="cellrowborder" valign="top" width="35.8%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0176508927_p10705352105920"><a name="zh-cn_topic_0176508927_p10705352105920"></a><a name="zh-cn_topic_0176508927_p10705352105920"></a>信息</p>
     </th>
-    <th class="cellrowborder" valign="top" width="64.2%" id="mcps1.2.3.1.2"><p id="zh-cn_topic_0176508927_p187057529593"><a name="zh-cn_topic_0176508927_p187057529593"></a><a name="zh-cn_topic_0176508927_p187057529593"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="64.2%" id="mcps1.2.3.1.2"><p id="zh-cn_topic_0176508927_p187057529593"><a name="zh-cn_topic_0176508927_p187057529593"></a><a name="zh-cn_topic_0176508927_p187057529593"></a>描述</p>
     </th>
     </tr>
     </thead>
@@ -104,9 +104,9 @@
 **表 2**  加密参数说明
 
 <a name="table542713310247"></a>
-<table><thead align="left"><tr id="row7427193314245"><th class="cellrowborder" valign="top" width="25.1%" id="mcps1.2.3.1.1"><p id="p54275331249"><a name="p54275331249"></a><a name="p54275331249"></a>参数</p>
+<table><thead align="left"><tr id="row7427193314245"><th class="cellrowborder" valign="top" width="25.1%" id="mcps1.2.3.1.1"><p id="p54275331249"><a name="p54275331249"></a><a name="p54275331249"></a>参数名</p>
 </th>
-<th class="cellrowborder" valign="top" width="74.9%" id="mcps1.2.3.1.2"><p id="p1942783313245"><a name="p1942783313245"></a><a name="p1942783313245"></a>参数说明</p>
+<th class="cellrowborder" valign="top" width="74.9%" id="mcps1.2.3.1.2"><p id="p1942783313245"><a name="p1942783313245"></a><a name="p1942783313245"></a>描述</p>
 </th>
 </tr>
 </thead>

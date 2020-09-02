@@ -1,6 +1,6 @@
 # Referer防盗链<a name="live_01_0048"></a>
 
-Referer防盗链功能是基于HTTP协议支持的Referer机制，通过播放请求中携带的Referer字段来识别请求来源。配置Referer黑名单或白名单后，CDN会根据名单对请求来源进行过滤，允许或拒绝播放请求。
+Referer防盗链功能是基于HTTP协议支持的Referer机制，通过播放请求中携带的Referer字段识别请求来源。配置Referer黑名单或白名单后，CDN会根据名单对请求来源进行过滤，允许或拒绝播放请求。
 
 ## 注意事项<a name="zh-cn_topic_0194695754_section9354115514113"></a>
 
@@ -21,7 +21,7 @@ Referer防盗链功能是基于HTTP协议支持的Referer机制，通过播放�
 3.  在需要配置鉴权信息的播放域名行单击“管理“。
 4.  在左侧导航树中选择“基础配置 \> 鉴权配置“。
 5.  选择“Referer防盗链“，弹出“Referer防盗链“对话框。
-6.  单击“开关“，如[图1](#zh-cn_topic_0194695754_fig657733201016)所示，配置Referer防盗链参数。
+6.  单击“开关“，配置Referer防盗链参数，如[图1](#zh-cn_topic_0194695754_fig657733201016)所示。
 
     **图 1**  配置Referer防盗链<a name="zh-cn_topic_0194695754_fig657733201016"></a>  
     ![](figures/配置Referer防盗链.png "配置Referer防盗链")

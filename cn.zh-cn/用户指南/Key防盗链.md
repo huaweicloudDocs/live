@@ -32,19 +32,42 @@
 3.  在需要配置鉴权信息的域名行单击“管理“。
 4.  在左侧导航树中选择“基础配置 \> 鉴权配置“。
 5.  选择“Key防盗链“，弹出“Key防盗链”对话框。
-6.  单击“开关”，如[图2](#fig987364825218)所示，配置Key防盗链参数。
+6.  单击“开关”，配置Key防盗链参数，如[图2](#fig987364825218)所示。
 
     **图 2**  配置Key防盗链<a name="fig987364825218"></a>  
     ![](figures/配置Key防盗链.png "配置Key防盗链")
 
-    -   **类型**：计算鉴权串的方式，可选为：方式A、方式B或方式C。
-    -   **Key**：鉴权key值，支持自定义设置，由16位的字母和数字组成。
-    -   **时长**：URL鉴权信息的超时时长，指的是鉴权信息中携带的请求时间与直播服务收到请求时的时间的最大差值，用于检查直播推流URL或者直播播放URL是否已过期，单位：秒，范围限制：1分钟-30天。
+    **表 1**  Key防盗链参数说明
+
+    <a name="table1442773003013"></a>
+    <table><thead align="left"><tr id="row142723023015"><th class="cellrowborder" valign="top" width="22.88%" id="mcps1.2.3.1.1"><p id="p8427113023020"><a name="p8427113023020"></a><a name="p8427113023020"></a>参数名</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="77.12%" id="mcps1.2.3.1.2"><p id="p44271930173012"><a name="p44271930173012"></a><a name="p44271930173012"></a>描述</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row134271230113014"><td class="cellrowborder" valign="top" width="22.88%" headers="mcps1.2.3.1.1 "><p id="p124272304307"><a name="p124272304307"></a><a name="p124272304307"></a>类型</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="77.12%" headers="mcps1.2.3.1.2 "><p id="p542718306301"><a name="p542718306301"></a><a name="p542718306301"></a>计算鉴权串的方式，可选为：方式A、方式B或方式C。</p>
+    </td>
+    </tr>
+    <tr id="row1842733010307"><td class="cellrowborder" valign="top" width="22.88%" headers="mcps1.2.3.1.1 "><p id="p7427930183019"><a name="p7427930183019"></a><a name="p7427930183019"></a>Key</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="77.12%" headers="mcps1.2.3.1.2 "><p id="p1142753012308"><a name="p1142753012308"></a><a name="p1142753012308"></a>鉴权key值，支持自定义设置，由16位的字母和数字组成。</p>
+    </td>
+    </tr>
+    <tr id="row84271530163016"><td class="cellrowborder" valign="top" width="22.88%" headers="mcps1.2.3.1.1 "><p id="p84271530143013"><a name="p84271530143013"></a><a name="p84271530143013"></a>时长</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="77.12%" headers="mcps1.2.3.1.2 "><p id="p13427123083011"><a name="p13427123083011"></a><a name="p13427123083011"></a>URL鉴权信息的超时时长，指的是鉴权信息中携带的请求时间与直播服务收到请求时的时间的最大差值，用于检查直播推流URL或者直播播放URL是否已过期，单位：秒，范围限制：1分钟-30天。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 
 7.  配置完成后，单击“确定“。
-8.  根据选择的鉴权方式获取对应的鉴权地址。
+8.  根据配置的鉴权方式拼接对应的鉴权地址。
 
-    各鉴权方式的对应鉴权地址生成方法请分别参见[鉴权方式A](#section13701955203212)、[鉴权方式B](#section934895818335)和[鉴权方式C](#section175641738343)。
+    各鉴权方式对应的鉴权地址拼接方法请分别参见[鉴权方式A](#section13701955203212)、[鉴权方式B](#section934895818335)和[鉴权方式C](#section175641738343)。
 
 9.  验证防盗链功能。
 
@@ -68,7 +91,7 @@ sstring = "{URI}-{Timestamp}-{rand}-{uid}-{Key}"
 HashValue = md5sum(sstring)
 ```
 
-**表 1**  鉴权字段描述
+**表 2**  鉴权字段描述
 
 <a name="table1451161195010"></a>
 <table><thead align="left"><tr id="row124516114503"><th class="cellrowborder" valign="top" width="30.709999999999997%" id="mcps1.2.3.1.1"><p id="p1945111165015"><a name="p1945111165015"></a><a name="p1945111165015"></a>字段</p>
@@ -158,7 +181,7 @@ http://test-play.example.com/livetest/huawei1.flv?auth_key=1592639100-477b3bbc25
 原始URL?txSecret=md5(Key + StreamName + txTime)&txTime=hex(timestamp)
 ```
 
-**表 2**  鉴权字段描述
+**表 3**  鉴权字段描述
 
 <a name="table192021126107"></a>
 <table><thead align="left"><tr id="row18203142151020"><th class="cellrowborder" valign="top" width="30.709999999999997%" id="mcps1.2.3.1.1"><p id="p172031211108"><a name="p172031211108"></a><a name="p172031211108"></a>字段</p>
@@ -235,14 +258,14 @@ http://test-play.example.com/livetest/huawei1.flv?txSecret=c37c840d8e13086106404
 -   **加密串**  = UrlEncode\(Base64\(AES128\(<Key\>,"$"+<Timestamp\>+"$"+<LiveID\>+"$"+<CheckLevel\>\)\)\)
 -   **EncodedIV **= Hex\(加密使用的IV\)
 
-算法中各加密参数说明如[表3](#table1447654611349)所示。
+算法中各加密参数说明如[表4](#table1447654611349)所示。
 
-**表 3**  加密参数说明
+**表 4**  加密参数说明
 
 <a name="table1447654611349"></a>
-<table><thead align="left"><tr id="row114761146133414"><th class="cellrowborder" valign="top" width="25.1%" id="mcps1.2.3.1.1"><p id="p204767461345"><a name="p204767461345"></a><a name="p204767461345"></a>参数</p>
+<table><thead align="left"><tr id="row114761146133414"><th class="cellrowborder" valign="top" width="25.1%" id="mcps1.2.3.1.1"><p id="p204767461345"><a name="p204767461345"></a><a name="p204767461345"></a>字段</p>
 </th>
-<th class="cellrowborder" valign="top" width="74.9%" id="mcps1.2.3.1.2"><p id="p14771946173416"><a name="p14771946173416"></a><a name="p14771946173416"></a>参数说明</p>
+<th class="cellrowborder" valign="top" width="74.9%" id="mcps1.2.3.1.2"><p id="p14771946173416"><a name="p14771946173416"></a><a name="p14771946173416"></a>描述</p>
 </th>
 </tr>
 </thead>

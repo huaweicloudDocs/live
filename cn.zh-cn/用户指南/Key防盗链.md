@@ -106,9 +106,9 @@ HashValue = md5sum(sstring)
 <p id="p1517857125519"><a name="p1517857125519"></a><a name="p1517857125519"></a>示例：1592639100（即2020-06-20 15:45）</p>
 </td>
 </tr>
-<tr id="row7451141116502"><td class="cellrowborder" valign="top" width="30.709999999999997%" headers="mcps1.2.3.1.1 "><p id="p4273179133514"><a name="p4273179133514"></a><a name="p4273179133514"></a>有效时间</p>
+<tr id="row7451141116502"><td class="cellrowborder" valign="top" width="30.709999999999997%" headers="mcps1.2.3.1.1 "><p id="p4273179133514"><a name="p4273179133514"></a><a name="p4273179133514"></a>时长</p>
 </td>
-<td class="cellrowborder" valign="top" width="69.28999999999999%" headers="mcps1.2.3.1.2 "><p id="p5509037103515"><a name="p5509037103515"></a><a name="p5509037103515"></a>鉴权有效的时间长度。</p>
+<td class="cellrowborder" valign="top" width="69.28999999999999%" headers="mcps1.2.3.1.2 "><p id="p5509037103515"><a name="p5509037103515"></a><a name="p5509037103515"></a>鉴权URL有效的时间长度。</p>
 <p id="p65094371351"><a name="p65094371351"></a><a name="p65094371351"></a>若设置的有效时间为1800s，则用户可在从timestamp开始的1800s内允许访问直播地址。超出该区间，鉴权失败。</p>
 <p id="p914513487250"><a name="p914513487250"></a><a name="p914513487250"></a>示例：若设置的访问时间为2020-6-30 00：00：00，则链接真正失效时间为2020-6-30 00：30：00。</p>
 </td>
@@ -152,7 +152,7 @@ HashValue = md5sum(sstring)</pre>
 ```
 原始URL：http://test-play.example.com/livetest/huawei1.flv
 timestamp：1592639100
-有效时间：1800s
+时长：1800s
 Key：MyLiveKeyValue01
 rand：477b3bbc253f467b8def6711128c7bec
 uid：0
@@ -209,7 +209,7 @@ http://test-play.example.com/livetest/huawei1.flv?auth_key=1592639100-477b3bbc25
 <pre class="screen" id="screen1613419558538"><a name="screen1613419558538"></a><a name="screen1613419558538"></a>txSecret = md5（Key + StreamName + txTime）</pre>
 </td>
 </tr>
-<tr id="row22035251016"><td class="cellrowborder" valign="top" width="30.709999999999997%" headers="mcps1.2.3.1.1 "><p id="p7186321115012"><a name="p7186321115012"></a><a name="p7186321115012"></a>有效时间</p>
+<tr id="row22035251016"><td class="cellrowborder" valign="top" width="30.709999999999997%" headers="mcps1.2.3.1.1 "><p id="p7186321115012"><a name="p7186321115012"></a><a name="p7186321115012"></a>时长</p>
 </td>
 <td class="cellrowborder" valign="top" width="69.28999999999999%" headers="mcps1.2.3.1.2 "><p id="p218632113505"><a name="p218632113505"></a><a name="p218632113505"></a>鉴权URL的有效时间长度。</p>
 <p id="p11186142175016"><a name="p11186142175016"></a><a name="p11186142175016"></a>若<strong id="b19819174513382"><a name="b19819174513382"></a><a name="b19819174513382"></a>txTime</strong>设置为当前时间，有效时间设置为1249s，则播放URL过期时间为当前时间+ 1249s。</p>
@@ -227,7 +227,7 @@ http://test-play.example.com/livetest/huawei1.flv?auth_key=1592639100-477b3bbc25
 Key：MyLiveKeyValue01
 StreamName：huawei1
 txTime：5eed5888
-有效时间：12495s
+时长：12495s
 ```
 
 根据计算公式，得到**txSecret**。

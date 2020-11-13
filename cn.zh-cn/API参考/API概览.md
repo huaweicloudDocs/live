@@ -155,6 +155,21 @@
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p58671473232"><a name="p58671473232"></a><a name="p58671473232"></a><a href="查询直播拉流HTTP状态码接口.md">查询直播拉流HTTP状态码接口</a></p>
 </td>
 </tr>
+<tr id="row24551447204314"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p15455184794311"><a name="p15455184794311"></a><a name="p15455184794311"></a>GET /v2/{project_id}/stats/transcode</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1345534713437"><a name="p1345534713437"></a><a name="p1345534713437"></a><a href="查询转码用量接口.md">查询转码用量接口</a></p>
+</td>
+</tr>
+<tr id="row1328522911371"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p137781353191414"><a name="p137781353191414"></a><a name="p137781353191414"></a>GET /v2/{project_id}/stats/record</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p162861129173713"><a name="p162861129173713"></a><a name="p162861129173713"></a><a href="查询录制用量接口.md">查询录制用量接口</a></p>
+</td>
+</tr>
+<tr id="row737674715379"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p6629125310143"><a name="p6629125310143"></a><a name="p6629125310143"></a>GET /v2/{project_id}/stats/snapshot</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1937620476371"><a name="p1937620476371"></a><a name="p1937620476371"></a><a href="查询截图用量接口.md">查询截图用量接口</a></p>
+</td>
+</tr>
 <tr id="row174991530436"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p139638597418"><a name="p139638597418"></a><a name="p139638597418"></a>GET /v2/{project_id}/stats/up-bandwidth/detail</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p2094953184410"><a name="p2094953184410"></a><a name="p2094953184410"></a><a href="查询上行带宽数据接口.md">查询上行带宽数据接口</a></p>

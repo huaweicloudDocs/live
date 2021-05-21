@@ -197,7 +197,7 @@ GET /v2/\{project\_id\}/stats/httpcodes
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p>请求的唯一标识</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p>请求的唯一标识。</p>
 </td>
 </tr>
 </tbody>
@@ -304,7 +304,7 @@ GET /v2/\{project\_id\}/stats/httpcodes
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.2 "><p>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p>请求的唯一标识</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.4.1.3 "><p>请求的唯一标识。</p>
 </td>
 </tr>
 </tbody>
@@ -392,7 +392,7 @@ GET /v2/{project_id}/stats/httpcodes?play_domains=example.huawei.com,example1.hu
 
 ## 状态码
 
-<a name="table5600"></a>
+<a name="status_code"></a>
 <table><thead align="left"><tr><th class="cellrowborder" valign="top" width="15%" id="mcps1.1.3.1.1"><p>状态码 </p>
 </th>
 <th class="cellrowborder" valign="top" width="85%" id="mcps1.1.3.1.2"><p>描述</p>

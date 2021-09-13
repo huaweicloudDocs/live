@@ -17,6 +17,7 @@
 ## 注意事项<a name="section257818139314"></a>
 
 -   该功能为可选项，默认不启用。
+-   推流与播放鉴权不能使用同一个Key值。
 -   启用该功能后，原始直播加速URL将无法使用，需要按规则生成合法的防盗链URL。
 -   若防盗链URL过期，或者签名不能通过，直播流将播放失败，并返回“403 Forbidden”信息。
 
@@ -53,7 +54,8 @@
     </tr>
     <tr id="row1842733010307"><td class="cellrowborder" valign="top" width="22.88%" headers="mcps1.2.3.1.1 "><p id="p7427930183019"><a name="p7427930183019"></a><a name="p7427930183019"></a>Key</p>
     </td>
-    <td class="cellrowborder" valign="top" width="77.12%" headers="mcps1.2.3.1.2 "><p id="p1142753012308"><a name="p1142753012308"></a><a name="p1142753012308"></a>鉴权key值，支持自定义设置，由16位的字母和数字组成。</p>
+    <td class="cellrowborder" valign="top" width="77.12%" headers="mcps1.2.3.1.2 "><p id="p19701848128"><a name="p19701848128"></a><a name="p19701848128"></a>鉴权key值。</p>
+    <a name="ul1383135113211"></a><a name="ul1383135113211"></a><ul id="ul1383135113211"><li>支持自定义设置，由32位的字母和数字组成。</li><li>支持自动生成。</li></ul>
     </td>
     </tr>
     <tr id="row84271530163016"><td class="cellrowborder" valign="top" width="22.88%" headers="mcps1.2.3.1.1 "><p id="p84271530143013"><a name="p84271530143013"></a><a name="p84271530143013"></a>时长</p>
@@ -153,7 +155,7 @@ HashValue = md5sum(sstring)</pre>
 原始URL：http://test-play.example.com/livetest/huawei1.flv
 timestamp：1592639100
 时长：1800s
-Key：MyLiveKeyValue01
+Key：GCTbw44s6MPLh4GqgDpnfuFHgy25Enly
 rand：477b3bbc253f467b8def6711128c7bec
 uid：0
 URI：/livetest/huawei1.flv
@@ -162,13 +164,13 @@ URI：/livetest/huawei1.flv
 根据计算公式，得到**md5hash**。
 
 ```
-HashValue = md5sum("/livetest/huawei1.flv-1592639100-477b3bbc253f467b8def6711128c7bec-0-MyLiveKeyValue01") = 546a86457bf6886a459596c545ff5224
+HashValue = md5sum("/livetest/huawei1.flv-1592639100-477b3bbc253f467b8def6711128c7bec-0-GCTbw44s6MPLh4GqgDpnfuFHgy25Enly") = dd1b5ffa00cf26acec0c169ae1cfabea
 ```
 
 则鉴权播放地址为：
 
 ```
-http://test-play.example.com/livetest/huawei1.flv?auth_key=1592639100-477b3bbc253f467b8def6711128c7bec-0-546a86457bf6886a459596c545ff5224
+http://test-play.example.com/livetest/huawei1.flv?auth_key=1592639100-477b3bbc253f467b8def6711128c7bec-0-dd1b5ffa00cf26acec0c169ae1cfabea
 ```
 
 ## 鉴权方式B<a name="section934895818335"></a>
@@ -224,7 +226,7 @@ http://test-play.example.com/livetest/huawei1.flv?auth_key=1592639100-477b3bbc25
 
 ```
 原始URL：http://test-play.example.com/livetest/huawei1.flv
-Key：MyLiveKeyValue01
+Key：GCTbw44s6MPLh4GqgDpnfuFHgy25Enly
 StreamName：huawei1
 txTime：5eed5888
 时长：12495s
@@ -233,13 +235,13 @@ txTime：5eed5888
 根据计算公式，得到**txSecret**。
 
 ```
-txSecret = md5(MyLiveKeyValue01huawei15eed5888) = c37c840d8e130861064047313991a4dd
+txSecret = md5(GCTbw44s6MPLh4GqgDpnfuFHgy25Enlyhuawei15eed5888) = 5cdc845362c332a4ec3e09ac5d5571d6
 ```
 
 则鉴权播放地址为：
 
 ```
-http://test-play.example.com/livetest/huawei1.flv?txSecret=c37c840d8e130861064047313991a4dd&txTime=5eed5888
+http://test-play.example.com/livetest/huawei1.flv?txSecret=5cdc845362c332a4ec3e09ac5d5571d6&txTime=5eed5888
 ```
 
 ## 鉴权方式C<a name="section175641738343"></a>
@@ -317,7 +319,7 @@ http://test-play.example.com/livetest/huawei1.flv?txSecret=c37c840d8e13086106404
 原始URL：http://test-play.example.com/livetest/huawei1.flv
 AppName：live
 StreamName：huawei1
-Key：MyLiveKeyValue01
+Key：GCTbw44s6MPLh4GqgDpnfuFHgy25Enly
 LiveID：live/huawei1
 Timestamp：20190428110000
 CheckLevel：3
@@ -327,14 +329,14 @@ IV：yCmE666N3YAq30SN
 根据计算公式，得到“加密串“和“EncodedIV“
 
 ```
-加密串 = LpB4kdZfnOwfbpIgYVo4ANwhZIkOO96o8Xfhc6qwOq0%3D
+加密串 = I90KW7GhxOMwoy5yaeKMStZsOC%2B6WIyqU2kLBYAvcso%3D
 EncodIV = 79436d453636364e335941713330534e
 ```
 
 则鉴权播放地址为：
 
 ```
-http://test-play.example.com/livetest/huawei1.flv?auth_info=LpB4kdZfnOwfbpIgYVo4ANwhZIkOO96o8Xfhc6qwOq0%3D.79436d453636364e335941713330534e
+http://test-play.example.com/livetest/huawei1.flv?auth_info=I90KW7GhxOMwoy5yaeKMStZsOC%2B6WIyqU2kLBYAvcso%3D.79436d453636364e335941713330534e
 ```
 
 ## 代码示例<a name="section3911050145912"></a>
@@ -360,7 +362,7 @@ public class Main {
 		byte[] ivBytes = "yCmE666N3YAq30SN".getBytes();
 
                 //在直播控制台配置的Key值
-		byte[] key = "MyLiveKeyValue01".getBytes();
+		byte[] key = "GCTbw44s6MPLh4GqgDpnfuFHgy25Enly".getBytes();
 
                 String msg = aesCbcEncrypt(data, ivBytes, key);
 		try {

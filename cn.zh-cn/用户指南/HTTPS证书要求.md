@@ -88,3 +88,9 @@ openssl rsa -in old_key.pem -out new_key.pem
     ```
 
 
+若需要将PKCS8格式私钥转换为PKCS1格式，则参考如下方法：
+
+```
+openssl rsa -in old_certificat.pem -out pkcs1.pem
+```
+

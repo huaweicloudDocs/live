@@ -18,14 +18,10 @@
 
 1.  <a name="li184701358115720"></a>获取域名对应的CNAME值。
     1.  登录[视频直播控制台](https://console.huaweicloud.com/live)，在左侧导航树中选择“域名管理 ”，进入域名管理页面。
-    2.  在已添加的播放域名行单击“管理”，进入基本信息页面。
+    2.  在所需域名行获取对应的CNAME。
 
-        在基本信息页面获取播放域名的CNAME。
-
-        **图 1**  播放地址<a name="fig199493611582"></a>  
-        ![](figures/播放地址.png "播放地址")
-
-        以“play-test.example.com“为例，获得对应的CNAME为“play-test.example.com.c.cdnhwc3.com“。
+        **图 1**  获取CNAME值<a name="fig14482192472118"></a>  
+        ![](figures/获取CNAME值.png "获取CNAME值")
 
 2.  登录[云解析服务](https://console.huaweicloud.com/dns)控制台。
 3.  在左侧导航中，选择“域名解析 \> 公网解析“，进入域名列表页面。

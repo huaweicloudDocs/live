@@ -174,6 +174,11 @@
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p16616105115477"><a name="p16616105115477"></a><a name="p16616105115477"></a><a href="查询录制规则配置.md">查询录制规则配置</a></p>
 </td>
 </tr>
+<tr id="row2027610359917"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p22764354913"><a name="p22764354913"></a><a name="p22764354913"></a>POST /v1/{project_id}/record/control</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p4276133510911"><a name="p4276133510911"></a><a name="p4276133510911"></a><a href="提交录制控制命令.md">提交录制控制命令</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
